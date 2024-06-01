@@ -98,8 +98,26 @@ section{
 }
 
 .header .header-1 .logo i{
+    /* test */
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    /* test end */
+    
     color:var(--green);
 }
+
+/* test */
+.header .logo .fas {
+    font-size: 2.5rem; /* Adjust as needed */
+}
+
+.header .logo .logo-text {
+    font-size: 2rem; /* Adjust as needed */
+    margin-left: 0.5rem; /* Adjust spacing as needed */
+}
+/* end test */
+
 
 .header .header-1 .search-form{
     width: 50rem;
