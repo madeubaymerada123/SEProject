@@ -1,7 +1,3 @@
-#Kelompok 8
-
-
-
 # Book Marketplace
 
 This is a simple Book Marketplace website built with HTML, CSS, and JavaScript. It allows users to view a list of available books and add them to a shopping cart.
