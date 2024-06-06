@@ -28,12 +28,18 @@ header{
 header .icon-cart{
     position: relative;
     right: -350px;
+    cursor: pointer;
 
 }
 
 header .close_icon{
     position: relative;
+    left: 20px;
+    cursor: pointer;
+}
 
+header .close_icon:hover{
+    background: var(#27ae60);
 }
 
 header .icon-cart span{
