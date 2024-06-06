@@ -146,3 +146,18 @@ var swiper = new Swiper(".blogs-slider", {
         },
     },
 });
+
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        const email = document.getElementById('email').value;
+
+        //check user atau seller
+        if (email.includes('@seller.com')) {
+            // Redirect to seller UI
+            window.location.href = 'seller-ui.html';
+        } else {
+            // Redirect to user UI
+            window.location.href = 'index.html';
+        }
+    });
