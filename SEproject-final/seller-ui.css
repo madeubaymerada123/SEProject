@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800;1000&display=swap");
+
+:root {
+    --green: #27ae60;
+    --dark-color: #219150;
+    --black: #444;
+    --light-color: #666;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --border-hover: 0.1rem solid var(--black);
+    --box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    transition: width none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100;
+    height: 0.01rem;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.heading span {
+    font-size: 3rem;
+    padding: 0.5rem 2rem;
+    color: var(--black);
+    background: #fff;
+    border: var(--border);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: var(--dark-color);
+}
+
+.header .header-1 {
+    background: #fff;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-1 .logo i {
+    /* test */
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    /* test end */
+
+    color: var(--green);
+}
+
+/* test */
+.header .logo .fas {
+    font-size: 2.5rem; /* Adjust as needed */
+}
+
+.header .logo .logo-text {
+    font-size: 2rem; /* Adjust as needed */
+    margin-left: 0.5rem; /* Adjust spacing as needed */
+}
+/* end test */
+
+.header .header-1 .search-form {
+    width: 50rem;
+    height: 5rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.header .header-1 .search-form input {
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+
+.header .header-1 .search-form label {
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .search-form label:hover {
+    color: var(--green);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover {
+    color: var(--green);
+}
+
+#search-btn {
+    display: none;
+}
+
+.header .header-2 {
+    background: var(--green);
+}
+
+.header .header-2 .navbar {
+    text-align: center;
+}
+
+.header .header-2 .navbar a {
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover {
+    background: var(--dark-color);
+}
+
+.header .header-2.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+.bottom-navbar {
+    text-align: center;
+    background: var(--green);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbar a {
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.bottom-navbar a:hover {
+    background: var(--dark-color);
+}
+
+/* .dashboard .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.dashboard .row .content{
+    flex: 1 1 43rem;
+}
+
+.dashboard .row .content h3{
+    color:var(--black);
+    font-size: 4.5rem;
+}
+
+.dashboard .row .content p{
+    color:var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+} */
+
+/* dashboar */
+.dashboard-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 150px;
+}
+
+.dashboard-container .top-dashboard {
+    margin-top: 60px;
+}
+
+.dashboard-container .top-dashboard h3 {
+    font-size: 50px;
+}
+
+.dashboard-container .top-dashboard p {
+    font-size: 20px;
+}
+
+/* saldo */
+.dashboard-container .top-dashboard .saldo {
+    margin-top: 20px;
+    padding: 30px 30px;
+    border: 1px solid rgba(160, 160, 160, 0.1);
+    box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.dashboard-container .top-dashboard .saldo h4 {
+    font-size: 30px;
+}
+
+.dashboard-container .top-dashboard .saldo p {
+    font-size: 30px;
+    font-weight: semibold;
+    color: #219150;
+}
+
+.dashboard-container .top-dashboard .saldo button {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #219150;
+}
+
+.dashboard-container .top-dashboard .saldo button:hover {
+    background-color: #1e8549;
+}
+
+/* manage listing */
+.dashboard-container .manage-list {
+    width: 900px;
+}
+.dashboard-container .manage-list h3 {
+    width: 190px;
+    background-color: #1e8549;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.dashboard-container .manage-list form {
+    width: 100%;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(160, 160, 160, 0.1);
+    box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-container .manage-list form .form-content {
+    width: 100%;
+}
+
+.dashboard-container .manage-list form .form-content .input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.dashboard-container .manage-list form .form-content .input label {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashboard-container .manage-list form .form-content .input input {
+    border: 1px solid #b8b8b8;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.dashboard-container .manage-list form .form-content .input input:focus {
+    border: 1px solid #27ae60;
+}
+
+.dashboard-container .manage-list button {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background-color: #1e8549;
+    color: #f7f7f7;
+}
+
+/* order management */
+.order-management-title {
+    /* background-color: #1e8549; */
+    font-size: 40px;
+    color: #1e8549;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.order-management {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.order-management .card {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    max-width: 900px;
+    border-radius: 20px;
+    padding: 20px 50px;
+    padding-left: 20px;
+    border: 1px solid rgba(160, 160, 160, 0.1);
+    box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.2);
+}
+
+.order-management .card .card-img {
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+}
+
+.order-management .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.order-management .card .card-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.order-management .card .card-detail h3 {
+    font-size: 50px;
+}
+.order-management .card .card-detail .buyer {
+    font-size: 30px;
+}
+.order-management .card .card-detail .quantity {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.order-management .card .card-detail .card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.order-management .card .card-detail .card-bottom .total {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order-management .card .card-detail .card-bottom .total span {
+    color: #1e8549;
+}
+
+.order-management .card .card-detail .card-bottom .card-button {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.order-management .card .card-detail .card-bottom .card-button .edit {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #1e8549;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.order-management .card .card-detail .card-bottom .card-button .delete {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: darkred;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: var(--green);
+    padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .share {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--green);
+    margin: 0 0.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background: var(--black);
+}

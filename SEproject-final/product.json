@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Dua Belas Pasang Mata",
+        "price": 56,
+        "image": "img/12-pasang-mata.png"
+    },
+    {
+        "id": 2,
+        "name": "Anak Semua Bangsa",
+        "price": 118,
+        "image": "img/anak-SB.png"
+    },
+    {
+        "id": 3,
+        "name": "Bumi Manusia",
+        "price": 118,
+        "image": "img/Bumi-Manusia.png"
+    },
+    {
+        "id": 4,
+        "name": "Filosofi Teras",
+        "price": 79,
+        "image": "img/filosofi-teras.png"
+    },
+    {
+        "id": 5,
+        "name": "Genduk",
+        "price": 79,
+        "image": "img/Genduk.png"
+    },
+    {
+        "id": 6,
+        "name": "Jejak Langkah",
+        "price": 128,
+        "image": "img/Jejak-Langkah.png"
+    },
+    {
+        "id": 7,
+        "name": "Laut Bercerita",
+        "price": 78,
+        "image": "img/Laut-bercerita.png"
+    },
+    {
+        "id": 8,
+        "name": "Padang Bulan",
+        "price": 79,
+        "image": "img/Padang-Bulan.png"
+    },
+    {
+        "id": 9,
+        "name": "Ronggeng Duku Paruk",
+        "price": 99,
+        "image": "img/Ronggeng-DP.png"
+    },
+    {
+        "id": 10,
+        "name": "Rumah Kaca",
+        "price": 79,
+        "image": "img/Rumah-Kaca.png"
+    },
+    {
+        "id": 11,
+        "name": "Gadis Kretek",
+        "price": 79,
+        "image": "img/Gadis-kretek.png"
+    },
+    {
+        "id": 12,
+        "name": "Perempuan Yang Menangis Kepada Bulan Hitam",
+        "price": 79,
+        "image": "img/dian-purnomo.png"
+    },
+    {
+        "id": 13,
+        "name": "Di Tanah Lada",
+        "price": 70,
+        "image": "img/tanah-lada.png"
+    },
+    {
+        "id": 14,
+        "name": "Tokyo & Perayaan Kesedihan",
+        "price": 60,
+        "image": "img/tokyo.png"
+    },
+    {
+        "id": 15,
+        "name": "Think Dog Think the Memoire of My Friends and I",
+        "price": 144,
+        "image": "img/thinkdogthink.jpg"
+    }
+]

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BookAvenue</title>
+
+        <!-- link untuk swiper -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <!-- link untuk font -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <!-- directory css -->
+        <link rel="stylesheet" href="seller-ui.css" type="text/css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-1">
+                <a href="#" class="logo"> <i class="fas fa-book"></i> BookAvenue </a>
+
+                <form action="" class="search-form">
+                    <input type="search" name="" placeholder="Search here..." id="search-box" />
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+
+                <div class="icons">
+                    <div id="search-btn" class="fas fa-search"></div>
+                    <div id="login-btn" class="fas fa-user"></div>
+                </div>
+            </div>
+
+            <div class="header-2">
+                <nav class="navbar">
+                    <a href="#dashboard">dashboard</a>
+                    <a href="#manage-listing">manage listing</a>
+                    <a href="#order-management">Order Management</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- <div class="dashboard">
+            <div class="row">
+                <div class="content">
+                    <h3>Dashboard</h3>
+                    <p>Total Revenue: Rp.xxx.xxx</p>
+                    <p>Total orders: xx</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="listing" id="home">
+            <h3>Manage Listing</h3>
+            <div class="manage-listing">
+                <form id="add-listing-form">
+                    <input type="text" name="title" placeholder="Title" required />
+                    <input type="text" name="author" placeholder="Author" required />
+                    <input type="number" name="price" placeholder="Price" required />
+                    <input type="number" name="quantity" placeholder="Quantity" required />
+                    <button type="submit">Add Listing</button>
+                </form>
+                <ul id="listing-container"></ul>
+            </div>
+        </section>
+
+        <div class="order-management">
+            <h3>Order Management</h3>
+            <ul id="order-list"></ul>
+        </div> -->
+        <div class="dashboard-container">
+            <div class="top-dashboard">
+                <h3>Dashboard</h3>
+                <p>Total Revenue: Rp.xxx.xxx</p>
+                <p>Total orders: xx</p>
+                <div class="saldo">
+                    <h4>Saldo:</h4>
+                    <p>Rp.xxx.xxx</p>
+                    <button>Tarik</button>
+                </div>
+            </div>
+            <div class="manage-list">
+                <h3>Manage Listing</h3>
+                <form action="">
+                    <div class="form-content">
+                        <div class="input">
+                            <label for="image">Image</label>
+                            <input
+                                type="file"
+                                name="image"
+                                id="image"
+                                placeholder="image"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label for="title">Title</label>
+                            <input
+                                type="text"
+                                name="title"
+                                id="title"
+                                placeholder="title"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label for="author">author</label>
+                            <input
+                                type="text"
+                                name="author"
+                                id="author"
+                                placeholder="author"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label for="price">price</label>
+                            <input
+                                type="number"
+                                name="price"
+                                id="price"
+                                placeholder="price"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label for="quantity">quantity</label>
+                            <input
+                                type="number"
+                                name="quantity"
+                                id="quantity"
+                                placeholder="quantity"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <button>Add List</button>
+                </form>
+            </div>
+        </div>
+        <h1 class="order-management-title">Order Management</h1>
+        <div class="order-management">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/dian-purnomo.png" alt="" />
+                </div>
+                <div class="card-detail">
+                    <h3>Dian Purnomo</h3>
+                    <p class="buyer">buyer: Chelsea</p>
+                    <p class="quantity">quantity: xx</p>
+                    <div class="card-bottom">
+                        <p class="total">total: <span>Rp.xxx.xxx</span></p>
+                        <div class="card-button">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/dian-purnomo.png" alt="" />
+                </div>
+                <div class="card-detail">
+                    <h3>Dian Purnomo</h3>
+                    <p class="buyer">buyer: Chelsea</p>
+                    <p class="quantity">quantity: xx</p>
+                    <div class="card-bottom">
+                        <p class="total">total: <span>Rp.xxx.xxx</span></p>
+                        <div class="card-button">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <!-- Footer Section -->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>our location</h3>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> Indonesia </a>
+                </div>
+
+                <div class="box">
+                    <h3>Links</h3>
+                    <a href="#dashboard"> <i class="fas fa-arrow-right"></i> Dashboard </a>
+                    <a href="#manage-listing">
+                        <i class="fas fa-arrow-right"></i> Manage Listing
+                    </a>
+                    <a href="#order-management">
+                        <i class="fas fa-arrow-right"></i> Order Management
+                    </a>
+                </div>
+
+                <div class="box">
+                    <h3>Extra Links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Account Info </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Our Services </a>
+                </div>
+
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> +62-123-456-789 </a>
+                    <a href="#"> <i class="fas fa-phone"></i> +62-111-333-555 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> BookAvenue@gmail.com </a>
+                    <img src="" class="map" alt="" />
+                </div>
+            </div>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </section>
+    </body>
+</html>

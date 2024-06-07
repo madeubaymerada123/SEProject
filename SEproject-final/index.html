@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookAvenue</title>
+
+
+    <!-- link untuk swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- link untuk font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- directory css -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+</head>
+<body>
+    
+    <!-- header starts -->
+    <header class = "header">
+        <div class="header-1">
+            
+            <a href="#" class = "logo"> <i class="fas fa-book"></i> BookAvenue </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+
+        </div>
+
+        <div class="header-2">
+            <nav class = "navbar">
+                <a href="#home">home</a>
+                <a href="#featured">featured</a>
+                <a href="#arrivals">arrivals</a>
+                <a href="#reviews">reviews</a>
+                <a href="#blogs">blogs</a>
+            </nav>
+        </div>
+
+
+
+
+    </header>
+
+    <!-- header end -->
+    <!-- bottom navbar -->
+    <nav class = "bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blogs"></a>
+    </nav>
+
+    <!-- login form -->
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+    
+        <form id="login-form" action="save-user.php" method="POST">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="email" class="box" placeholder="enter your email" id="email" required>
+            <span>password</span>
+            <input type="password" name="password" class="box" placeholder="enter your password" id="password" required>
+            <div class="checkbox">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>Forget password ? <a href="#">click here...</a></p>
+            <p>Don't have an account? <a href="#">Create one</a></p>
+        </form>
+        
+    </div>
+    
+    
+   <!-- Shopping Cart -->
+
+
+
+
+
+   <!-- Favorite -->
+        
+
+
+
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>up to 50% off</h3>
+                <p>Discover a world of literature at unbeatable prices. From timeless classics to modern bestsellers, 
+                    immerse yourself in a vast collection of books that cater to every reader's taste. Don't miss out on our limited-time offer!</p>
+                     <a href="cart.html" class="btn">Shop Now!</a>
+            </div>
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="buku3.html" class="swiper-slide"><img src="img/Bumi-Manusia.png" alt=""></a>
+                    <a href="buku8.html" class="swiper-slide"><img src="img/Padang-Bulan.png" alt=""></a>
+                    <a href="buku9.html" class="swiper-slide"><img src="img/Ronggeng-DP.png" alt=""></a>
+                    <a href="buku2.html" class="swiper-slide"><img src="img/anak-SB.png" alt=""></a>
+                    <a href="buku6.html" class="swiper-slide"><img src="img/Jejak-Langkah.png" alt=""></a>
+                    <a href="buku10.html" class="swiper-slide"><img src="img/Rumah-Kaca.png" alt=""></a>
+                </div>
+                <img src="img/44962-6-shelf-free-clipart-hd.png" class="stand" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Icons section -->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-truck"></i>
+            <div class="content">
+                <h3>free shipping</h3>
+                <p>order over Rp.1.625.415,00</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>24/7 support</h3>
+                <p>Call us anytime</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>Secure payment</h3>
+                <p>100 secure payemnt</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>Easy return</h3>
+                <p>10 days return</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured" id="featured">
+        <h1 class="heading"> <span>Featured Books</span></h1>
+        
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>    
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku1.html " class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/12-pasang-mata.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Dua Belas Pasang Mata</h3>
+                        <div class="price">Rp.56K <span>Rp.70K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku2.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/anak-SB.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Anak Semua Bangsa</h3>
+                        <div class="price">Rp.118K <span>Rp.132K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku3.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/Bumi-Manusia.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Bumi Manusia</h3>
+                        <div class="price">Rp.118K <span>Rp.132K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku4.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/filosofi-teras.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Filosofi Teras</h3>
+                        <div class="price">Rp.79K <span>Rp.98K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku5.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/Genduk.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Genduk</h3>
+                        <div class="price">Rp.74K <span>Rp.93K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku6.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/Jejak-Langkah.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Jejak Langkah</h3>
+                        <div class="price">Rp.128K <span>Rp.143K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku7.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/Laut-bercerita.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Laut Bercerita</h3>
+                        <div class="price">Rp.78K <span>Rp.109K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku8.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/Padang-Bulan.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Padang Bulan</h3>
+                        <div class="price">Rp.79K <span>Rp.120K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku9.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/Ronggeng-DP.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Ronggeng Dukuh Paruk</h3>
+                        <div class="price">Rp.99K <span>Rp.109K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buku10.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/Rumah-Kaca.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Rumah Kaca</h3>
+                        <div class="price">Rp.123K <span>Rp.137K</span></div>
+                        <a href="cart.html" class="btn">Go To Cart</a>
+                    </div>
+                </div>
+
+            </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- Newsletter section -->
+    <section class="newsletter">
+        <form action="">
+            <h3>Subscribe for latest updates</h3>
+            <input type="email" name="" placeholder="Enter your email" id="" class="box">
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+
+    <!-- new arrivals -->
+    <section class="arrivals" id="arrivals">
+
+        <h1 class="heading"><span>New Arrivals</span></h1>
+       
+        <div class="swiper arrivals-slider">
+            
+            <div class="swiper-wrapper">
+                
+                <a href="buku11.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/tanah-lada.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Di Tanah Lada</h3>
+                        <div class="price">Rp.70K <span>Rp.88K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="buku12.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/tokyo.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tokyo & Perayaan Kesedihan</h3>
+                        <div class="price">Rp.60K <span>Rp.75K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="buku3.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/Bumi-Manusia.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Bumi Manusia</h3>
+                        <div class="price">Rp.118K <span>Rp.132K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="buku10.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/Rumah-Kaca.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Rumah Kaca</h3>
+                        <div class="price">Rp.123K <span>Rp.137K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="buku7.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/Laut-bercerita.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Laut Bercerita</h3>
+                        <div class="price">Rp.78K <span>Rp.109K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="swiper arrivals-slider">
+            <div class="swiper-wrapper">
+                <a href="buku8.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/Padang-Bulan.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Padang Bulan</h3>
+                        <div class="price">Rp.79K <span>Rp.120K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="buku4.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/filosofi-teras.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Filosofi Teras</h3>
+                        <div class="price">Rp.79K <span>Rp.98K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="buku13.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/Gadis-kretek.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Gadis Kretek</h3>
+                        <div class="price">Rp.60K <span>Rp.75K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="buku1.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/12-pasang-mata.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Dua Belas Pasang Mata</h3>
+                        <div class="price">Rp.56K <span>Rp.70K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="buku14.html" class="swiper-slide box">
+                    <div class="img">
+                        <img src="img/dian-purnomo.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Perempuan yang Menangis Kepada Bulan Hitam</h3>
+                        <div class="price">Rp.79K <span>Rp.99K</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+            </div>
+        </div>
+
+    </section>
+
+    <!-- deal section-->
+    <section class="deal">
+        <div class="content">
+            <h3>Deal of The Day</h3>
+            <h1>Up to 75% off</h1>
+            <p>"Think Dog Think: The Memoirs of My Friends and I" by James Offord is a heartwarming and insightful journey into the world of dogs. Through engaging stories and unique perspectives, this book offers a deep dive into the bond between humans and their canine companions. 
+                Perfect for dog lovers and those curious about animal behavior, this memoir will captivate and inspire. Grab your copy now and enjoy this delightful read at a steal price!</p>
+            <a href="cart.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="image">
+            <img src="img/pngegg.png" alt="">
+        </div>
+
+
+
+    </section>
+
+    <!-- reviews section -->
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading"> <span>Client's Reviews </span></h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="img/reviewers/golden-retriever-4301212_960_720.jpg" alt="">
+                    <h3>John Dogg</h3>
+                    <p>"A fantastic selection of books! I found exactly what I was looking for and more. 
+                        The prices are unbeatable, and the delivery was fast and reliable. Highly recommend this marketplace for all book lovers."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/reviewers/handsome-blond-young-man-posing-studio_158595-3375.jpg" alt="">
+                    <h3>Richard</h3>
+                    <p>"An impressive variety of books spanning all genres. The website is user-friendly, and the recommendations are spot on. I’ve discovered so many new authors thanks to this marketplace."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/reviewers/istockphoto-1300512215-612x612.jpg" alt="">
+                    <h3>Teddy</h3>
+                    <p>"I appreciate the detailed descriptions and reviews provided for each book. It makes choosing my next read so much easier. Plus, the customer service is excellent and very responsive."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/reviewers/pexels-olly-3763188.jpg" alt="">
+                    <h3>Sofia</h3>
+                    <p>"Finding rare and out-of-print books has never been easier. This marketplace has a vast collection that never disappoints. I’m thrilled with my purchases every time."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/reviewers/Teddy vtuber.png" alt="">
+                    <h3>Mustafa</h3>
+                    <p>"A haven for book enthusiasts! The deals and discounts are great, and the selection is diverse. I love how easy it is to navigate through the categories and find books that suit my taste."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/reviewers/young-adult-profile-picture-red-600nw-1655747050.png" alt="">
+                    <h3>Katherine</h3>
+                    <p>"The best online bookstore I’ve come across! The prices are fair, and the variety is exceptional. I’ve found so many great reads here, and the shipping is always timely."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blogs section -->
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> <span> Our Blogs</span></h1>
+        
+        <div class="swiper blogs-slider">
+            
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/blogs/book-1835799_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Top 10 Must-Read Books of 2024</h3>
+                        <p>Discover the best books released this year. From thrilling novels to inspiring non-fiction, these are the must-reads you can't miss.</p>
+                        <a href="https://www.vogue.com/article/best-books-2024" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/blogs/wordpress-265132_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>How to Write a Book Review</h3>
+                        <p>Learn the art of crafting engaging and insightful book reviews that help fellow readers find their next great read.</p>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1zorXv8iGAxV8SmwGHWiYK-cQFnoECBgQAQ&url=https%3A%2F%2Fwww.booktrust.org.uk%2Fbooks-and-reading%2Ftips-and-advice%2Fwriting-tips%2Fwriting-tips-for-teens%2Fhow-to-write-a-book-review%2F&usg=AOvVaw0DE7NlYUyImRKYXyNckG_5&opi=89978449" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/blogs/woman-4178187_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Benefits of Reading Every Day</h3>
+                        <p>Explore how daily reading can enhance your mental health, knowledge, and creativity. Get inspired to make reading a daily habit.</p>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiT-7Tfv8iGAxWQS2wGHSxpBbwQFnoECDoQAQ&url=https%3A%2F%2Fwww.healthline.com%2Fhealth%2Fbenefits-of-reading-books&usg=AOvVaw1s6KErDIuaWuhAYrzmvis4&opi=89978449" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/blogs/books-1204029_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Building Your Home Library</h3>
+                        <p>Tips and tricks for curating a personal library that reflects your interests and passions. Create a cozy reading nook in your home.</p>
+                        <a href="https://www.taskrabbit.ca/blog/10-easy-tips-to-create-the-perfect-home-library/" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/blogs/book-2020460_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Exploring Different Book Genres</h3>
+                        <p>Dive into various literary genres and find new favorites. From mystery to romance, there's something for everyone.</p>
+                        <a href="https://www.frostbeardstudio.com/blogs/news/why-you-should-explore-new-genres-and-styles-of-books" class="btn">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our location</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Indonesia </a>
+            </div>
+        
+            <div class="box">
+                <h3>Links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Featured </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Arrivals </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Reviews </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Blogs </a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Account Info </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Ordered Items </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Payment Methods </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Our Services </a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +62-123-456-789 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +62-111-333-555 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> BookAvenue@gmail.com </a>
+                <img src="" class="map" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+    </section>
+
+    <!-- file js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cart_script.js"></script>
+
+
+</body>
+</html>
